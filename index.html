@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Judgment</title>
+  </head>
+    <body>
+
+      <div id="app">
+
+        <!-- APIからデータを取得中の場合 ⇒ ローディングステータス表示 -->
+        <section v-if="loading">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Judging...
+            </button>
+          </div>
+        </section>
+
+        <section v-else>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button" v-on:click="btn">JUDGE</button>
+          </div>
+        </section>
+
+        <!-- Yes or No or Maybe -->
+        <div v-for="yesno in info">
+          <div v-if="yesno.answer === 'yes'">
+            <img src="yes.png"/>
+          </div>
+          <div v-else-if="yesno.answer === 'no'">
+            <img src="no.png"/>
+          </div>
+          <div v-else-if="yesno.answer === 'maybe'">
+            <img src="maybe.png"/>
+          </div>
+        </div>
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="https://unpkg.com/vue@next"></script>
+      <script src="script.js"></script>
+
+      <footer>
+        <p>10,000回に1回...</p>
+      </footer>
+
+    </body>
+</html>

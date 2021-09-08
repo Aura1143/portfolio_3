@@ -1,0 +1,41 @@
+*{
+  margin: 0;  /* 外側の余白を消す */
+  padding: 0; /* 内側の余白を消す */
+}
+
+body {
+  width: 100%;
+	height: 100vh;
+  position: relative;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body.after {
+  background-image: none;
+}
+
+/*------------------------------------------------------------------------------
+Yes / No / Maybe
+------------------------------------------------------------------------------*/
+img {
+  width: 100%;
+	height: 95%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*------------------------------------------------------------------------------
+フッター
+------------------------------------------------------------------------------*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;       /* 文字色 = "白" */
+}
