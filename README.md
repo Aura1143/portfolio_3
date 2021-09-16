@@ -2,6 +2,10 @@
 
 ![sample](https://user-images.githubusercontent.com/81360876/132346948-95918d7f-8ba4-41d8-bf8f-7fc1666285ce.png)
 
+### :globe_with_meridians: App URL
+**https://judgment.netlify.app/**
+
+---
 ### :art: コンセプト
 **何ができるアプリなのかイメージしやすいデザイン**
 
@@ -25,3 +29,4 @@
 - axios
 - Bootstrap
 - SweetAlert
+- Netlify
