@@ -14,7 +14,7 @@
 1. レスポンシブ対応
 1. APIキー取得不要
 1. APIからデータを取得中にローディングステータスの表示
-1. エラー発生時のポップアップメッセージ表示（SweetAlert使用）
+1. エラー発生時のポップアップメッセージ表示（SweetAlert2使用）
 
 ---
 ### :book: 説明
@@ -24,9 +24,9 @@
 ---
 ### :wrench: 使用技術
 - HTML / CSS
-- Javascript（Vue.js）
+- Javascript（Vue.js v3.x）
 - Web API（[Yes No](https://yesno.wtf/ "Yes Or No? yesno.wtf — foolproof™ decision-making")）
 - axios
-- Bootstrap
-- SweetAlert
+- Bootstrap v5.0.0
+- SweetAlert2 v11.x
 - Netlify
